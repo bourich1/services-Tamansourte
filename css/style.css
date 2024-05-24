@@ -103,6 +103,7 @@ header{
     padding: 25px 0;
         .home-content{
             width: 40%;
+            line-height: 5rem !important;
             direction: rtl;
                 p{
                     line-height: 1.8rem;
