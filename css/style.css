@@ -14,9 +14,10 @@ body{
     width: 93%;
     margin: 30px auto;
     margin-bottom: 0;
-    background-color: rgba(240, 240, 240, 0.604);
+    background-color: rgba(255, 255, 255, 0.959);
     padding: 30px;
     position: relative;
+    
 }
 header{
     display: flex;
@@ -421,10 +422,9 @@ header{
                 padding: 15px 10px;
             }
     }
+   
     .home{
-        width: auto;
-    }
-    .home{
+        
         .home-content{
             width: 70%;
         }
@@ -484,20 +484,20 @@ header{
             }
     }
     .home{
-        width: auto;
-        flex-direction: column-reverse;
-    }
-    .home{
-        position: relative;
+        
+        flex-direction: column-reverse !important;
         .home-content{
             width: 90%;
             padding: 0 20px;
+            width: 100%;
         }
     }
     .img{
-        position: absolute;
-        bottom: 20px;
-        left: 15px;
+        width: 40% !important;
+        display: flex;
+        justify-content: left;
+        margin: auto;
+        margin-top: 20px;
     }
     .sinup-modal{
         h3{
