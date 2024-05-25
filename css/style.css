@@ -9,6 +9,9 @@ body{
     font-family: roboto;
     font-family: Rubik;
     overflow-x: hidden;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
 }
 .container{
     width: 93%;
@@ -93,13 +96,10 @@ header{
 }
 /* home */
 .home{
-    width: 80%;
     margin: auto;
     padding: 30px 10px;
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    align-items: end;
     padding: 25px 0;
         .home-content{
             width: 40%;
@@ -444,11 +444,14 @@ header{
 
 @media only screen and (max-width: 480px){
 .container{
-    padding: 10px;
+    padding: 0px;
     }
     .client{
         
-        grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+        grid-template-columns: 1fr 1fr;
+            .item{
+                width: auto;
+            }
     }
     .nav-icon{
         display: block;
@@ -485,20 +488,14 @@ header{
             }
     }
     .home{
-        
-        flex-direction: column-reverse !important;
-        .home-content{
-            width: 90%;
-            padding: 0 20px;
-            width: 100%;
-        }
-    }
-    .img{
-        width: 40% !important;
-        display: flex;
-        justify-content: left;
-        margin: auto;
-        margin-top: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+            .img{
+                width: 50%;
+            }
+            .home-content{
+                width: 90%;
+            }
     }
     .sinup-modal{
         h3{
@@ -516,8 +513,8 @@ header{
         font-size: 0.7rem;
     }
     .new-proudact{
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
             .card{
                 height: auto;
                     .head{
@@ -538,38 +535,6 @@ header{
                 outline: 5px solid #7fbbffc2;
                 border: none;
             }
-    }
-    .courses{
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        .course-card{
-            
-            height: auto;
-                .content{
-
-                    margin-top: 0px;
-                    padding-top: 0;
-                    .buy{
-                        display: none;
-                    }
-                    p{
-                        display: none;
-                    }
-                        h2{
-                            font-size: 16px;
-                            margin: 5px 0;
-                        }
-                        .price{
-                            margin: 7px 0;
-                            flex-direction: column;
-                            .prices-value{
-                                font-size: 0.8rem;
-                                justify-content: space-between;
-                                width: 80%;
-                            }
-                        }
-                }
-        }
     }
 }
 
